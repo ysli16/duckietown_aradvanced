@@ -1,7 +1,7 @@
 # parameters
-ARG REPO_NAME="<REPO_NAME_HERE>"
-ARG DESCRIPTION="<DESCRIPTION_HERE>"
-ARG MAINTAINER="<YOUR_FULL_NAME> (<YOUR_EMAIL_ADDRESS>)"
+ARG REPO_NAME="<duckietown_aradvanced>"
+ARG DESCRIPTION="<Advanced augmented reality exercise. Project a 3D model onto an image such that the position and orientation of the model match the position and orientation of an AprilTag. >"
+ARG MAINTAINER="<Yueshan Li> (<yuesli@student.ethz.ch>)"
 # pick an icon from: https://fontawesome.com/v4.7.0/icons/
 ARG ICON="cube"
 
