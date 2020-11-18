@@ -1,28 +1,31 @@
-# Template: CRA1
+## Usage
 
-This template provides a boilerplate repository
-for developing CRA1 exercise.
+### Build docker image
 
+Run command
 
-## How to use it
+`dts devel build -H <duckiebot_name>.local -f`
 
-### 1. Fork this repository
+Replace `<duckiebot_name>` with the name of your duckiebot.
 
-Use the fork button in the top-right corner of the github page to fork this template repository.
+### Run the container
 
+Run command
 
-### 2. Create a new repository
+`dts devel run -H <duckiebot_name>.local`
 
-Create a new repository on github.com while
-specifying the newly forked template repository as
-a template for your new repository.
+Replace `<duckiebot_name>` with the name of your duckiebot.
 
+### Check the result
 
-### 3. Place your code
+Run command 
 
-Edit the code in `augmented_reality_apriltag.py` the augmented_reality_apriltag package.
+`dts start_gui_tools <duckiebot_name>`
 
+Replace `<duckiebot_name>` with the name of your duckiebot.
 
-### 5. Try your code
+Then run command
 
-Build and run your code using `dts devel` or `docker` commands.
+`rqt_image_view`
+
+and select topic */<robot_name>/at_detect/image/compressed*. The *<robot_name>* is the actual name of your duckiebot.
